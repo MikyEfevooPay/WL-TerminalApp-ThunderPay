@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16.143dp"
+    android:height="28.602dp"
+    android:viewportWidth="16.143"
+    android:viewportHeight="28.602">
+  <path
+      android:pathData="M 14 29 l -14 -15 l 14 -14 l 1.021 1 l -13.021 13 l 13 14 Z"
+      android:fillColor="@color/ep_btn_continuar_fondo"/>
+</vector>
