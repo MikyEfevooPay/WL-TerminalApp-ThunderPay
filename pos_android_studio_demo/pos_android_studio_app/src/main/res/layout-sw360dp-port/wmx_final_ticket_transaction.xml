@@ -56,9 +56,9 @@
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="315px"
-                android:layout_height="56.98px"
+                android:layout_height="66.98px"
                 android:layout_marginBottom="16px"
-                app:srcCompat="@drawable/logo_digitalticket" />
+                app:srcCompat="@drawable/logo" />
 
         </LinearLayout>
 
@@ -159,7 +159,7 @@
             android:layout_marginLeft="0px"
             android:layout_marginRight="0px"
             android:layout_marginBottom="23px"
-            android:backgroundTint="#A3A6FC"
+            android:backgroundTint="#9950A6"
             android:contentDescription="underline"
             android:layerType="software"
             android:src="@drawable/dotted_line" />
@@ -334,7 +334,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="92px"
                 android:background="@drawable/rounded_corner"
-                android:backgroundTint="#386EB1"
+                android:backgroundTint="#6B3374"
                 android:fontFamily="@font/dm_sans_bold"
                 android:minHeight="50dip"
                 android:stateListAnimator="@null"

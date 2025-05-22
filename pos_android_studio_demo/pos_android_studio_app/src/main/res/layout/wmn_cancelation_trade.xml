@@ -35,8 +35,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_medium"
             android:gravity="center"
-            android:text="La transacción fue cancelada" />
-
+            android:text="La transacción fue cancelada"
+            android:textColor="@color/ep_set_monto"/>
         <TextView
             android:id="@+id/textView6"
             android:layout_width="220dp"

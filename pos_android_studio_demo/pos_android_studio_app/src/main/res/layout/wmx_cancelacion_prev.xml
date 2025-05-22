@@ -348,7 +348,7 @@
             android:layout_width="match_parent"
             android:layout_height="60px"
             android:background="@drawable/rounded_corner_cancel"
-            android:backgroundTint="@color/ep_btn_continuar_fondo"
+            android:backgroundTint="@color/btn_black"
 
             android:enabled="true"
             android:fontFamily="@font/dm_sans_bold"

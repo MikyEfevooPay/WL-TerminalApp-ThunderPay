@@ -32,7 +32,7 @@
                 android:fontFamily="@font/dm_sans_bold"
                 android:text="Monto total"
                 android:textAlignment="center"
-                android:textColor="@color/ep_set_monto"
+                android:textColor="#299D15"
                 android:textSize="25px" />
 
             <TextView
@@ -43,7 +43,7 @@
                 android:layout_marginBottom="5px"
                 android:fontFamily="@font/dm_sans_bold"
                 android:text="$4,130.00 mxn"
-                android:textColor="@color/ep_set_monto"
+                android:textColor="#299D15"
                 android:textSize="40px" />
 
             <TextView
@@ -126,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/btn_black"
+            android:backgroundTint="@color/ep_btn_continuar_fondo"
             android:fontFamily="@font/dm_sans_bold"
             android:text="Confirmar corte de caja"
             android:textAllCaps="false"

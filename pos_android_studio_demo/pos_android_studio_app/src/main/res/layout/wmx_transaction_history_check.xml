@@ -21,7 +21,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/efevoo_i_info" />
+            app:srcCompat="@drawable/m_informaci_n" />
 
         <TextView
             android:id="@+id/textView31"

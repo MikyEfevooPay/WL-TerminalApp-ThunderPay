@@ -176,7 +176,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@color/ep_btn_continuar_fondo"
             android:fontFamily="@font/dm_sans_bold"
             android:stateListAnimator="@null"
             android:text="@string/wmx_not_network_connection_test"
@@ -194,7 +194,7 @@
             android:stateListAnimator="@null"
             android:text="Cancelar"
             android:textAllCaps="false"
-            android:textColor="@color/ep_color_black"
+            android:textColor="@color/secundary_color"
             android:textSize="30px" />
 
 

@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="Aut. No. "
-                    android:textColor="#386EB1"
+                    android:textColor="#6B3374"
                     android:textSize="24px" />
 
                 <TextView
@@ -47,7 +47,7 @@
                     android:layout_marginBottom="9px"
                     android:fontFamily="@font/dm_sans"
                     android:text="3884956"
-                    android:textColor="#386EB1"
+                    android:textColor="#6B3374"
                     android:textSize="24px" />
             </LinearLayout>
 
@@ -107,7 +107,7 @@
                 android:layout_marginBottom="9px"
                 android:fontFamily="@font/dm_sans"
                 android:text="27/04/22"
-                android:textColor="#386EB1"
+                android:textColor="#6B3374"
 
                 android:textSize="24px" />
 
@@ -164,7 +164,7 @@
                     android:gravity="center"
                     android:text="11:11"
                     android:textAlignment="center"
-                    android:textColor="#386EB1"
+                    android:textColor="#6B3374"
                     android:textSize="24px" />
             </LinearLayout>
 

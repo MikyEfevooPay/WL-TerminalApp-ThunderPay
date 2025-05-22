@@ -189,7 +189,7 @@
 
     <color name="shrine_pink_100">#4AAC38</color>
     <color name="shrine_pink_light">#fff</color>
-    <color name="shrine_pink_900">#DE000000</color>
+    <color name="shrine_pink_900">#000000</color>
 
     <!--  Efevoo Pay colors  -->
         <!--  fondo  -->
@@ -225,7 +225,7 @@
 
     <!--  Color  -->
     <color name="ep_color_black">#121212</color>
-    <color name="ep_color_blue">#3378FA</color>
+    <color name="ep_color_blue">#6B3374</color>
 
     <!--  Radio button  -->
     <color name="ep_rb_bg">#F0F0F0</color>
@@ -240,7 +240,7 @@
     <color name="sign_pen_green">#0cba02</color>
     <color name="sign_pen_yellow">#f9d403</color>
     <color name="sign_pen_blue">#027de9</color>
-    <color name="sign_toolbar_bg">#0c53ab</color>
+    <color name="sign_toolbar_bg">#6B3374</color>
     <color name="sign_bg">#f5f5f5</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
@@ -250,19 +250,19 @@
     <!--  Text  -->
 
 
-    <color name="m_btn_stroke">#AFC5DF</color>
+    <color name="m_btn_stroke">#DAC1E0</color>
 
 
     <!--  colores del menu  -->
-    <color name="ep_btn_menu_texto">#001750</color>
+    <color name="ep_btn_menu_texto">#6B3374</color>
     <!--  Color primario en textos, colores de la mayoria de los textos y otros  -->
-    <color name="ep_set_monto">#004FE8</color>
+    <color name="ep_set_monto">#6B3374</color>
     <!--  Color secundario en textos, colores de la mayoria de los textos y otros  -->
-    <color name="secundary_color">#00B012</color>
+    <color name="secundary_color">#6B3374</color>
     <!--  Color boton principal  -->
-    <color name="ep_btn_continuar_fondo">#004FE8</color>
+    <color name="ep_btn_continuar_fondo">#6B3374</color>
     <!--  Color boton secundario, mayormente es negro  -->
-    <color name="btn_black">#004FE8</color>
+    <color name="btn_black">#343434</color>
 
 
 </resources>

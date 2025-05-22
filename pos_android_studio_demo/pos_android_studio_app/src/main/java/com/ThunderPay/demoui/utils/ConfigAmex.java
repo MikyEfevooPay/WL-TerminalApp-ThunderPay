@@ -54,7 +54,8 @@ public class ConfigAmex {
                             InitActivaAmex(response.toString(),ksn_posId,valor);
                             TRACE.d("tpvConfig: " +  TRACE.NEW_LINE + response.toString() );
                         }else{
-                            bndamex[0] =Boolean.FALSE;
+                            dbManager.update(ksn_posId, "0","","",Integer.parseInt("0"),"","");
+                            bndamex[0] =Boolean.TRUE;
                         }
                     } catch (JSONException e) {
                         bndamex[0] =Boolean.FALSE;

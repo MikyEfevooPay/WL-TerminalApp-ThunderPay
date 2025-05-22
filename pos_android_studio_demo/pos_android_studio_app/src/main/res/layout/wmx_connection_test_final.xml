@@ -156,7 +156,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_corner"
-                    android:backgroundTint="#386EB1"
+                    android:backgroundTint="@color/btn_black"
                     android:text="Button"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF"

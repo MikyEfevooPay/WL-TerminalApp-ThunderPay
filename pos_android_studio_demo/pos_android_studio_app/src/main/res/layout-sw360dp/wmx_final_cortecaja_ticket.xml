@@ -19,6 +19,12 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/giv_card_status"
+            android:layout_width="254px"
+            android:layout_height="124px"
+            android:src="@drawable/efevoo_i_check_resumen_de_pago" />
+
         <TextView
             android:id="@+id/lbl_corte_ticket_title"
             android:layout_width="wrap_content"
@@ -51,7 +57,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="315px"
                 android:layout_height="56.98px"
-                app:srcCompat="@drawable/logo_digitalticket" />
+                app:srcCompat="@drawable/logo" />
 
         </LinearLayout>
 

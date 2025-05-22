@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/img_ticket_logo"
         android:layout_width="match_parent"
-        android:layout_height="62px"
+        android:layout_height="92px"
         app:srcCompat="@drawable/logo_ticket" />
 
     <LinearLayout

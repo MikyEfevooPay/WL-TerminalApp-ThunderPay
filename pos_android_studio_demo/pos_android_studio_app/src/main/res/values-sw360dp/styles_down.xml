@@ -107,7 +107,7 @@
         <item name="android:layout_gravity">center</item>
         <item name="background">@drawable/rounded_corner_cancel</item>
         <item name="android:layout_marginBottom">15px</item>
-        <item name="backgroundTint">#121212</item>
+        <item name="backgroundTint">#6B3374</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
@@ -118,7 +118,7 @@
         <item name="android:orientation">vertical</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginBottom">15px</item>
-        <item name="backgroundTint">@color/ep_btn_regresar_texto</item>
+        <item name="backgroundTint">#6B3374</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
@@ -189,7 +189,7 @@
         <item name="colorSurface">#fff</item>
         <item name="colorOnSurface">#121212</item>
         <!--        <item name="colorPrimary">#92A8FF</item>-->
-        <item name="colorPrimary">#386EB1</item>
+        <item name="colorPrimary">#6B3374</item>
         <item name="colorOnPrimary">#fff</item>
 
     </style>
@@ -221,7 +221,7 @@
     <!--  selected color  -->
     <style name= "CustomSelected" parent="Widget.MaterialComponents.MaterialCalendar.Day.Selected">
         <item name="itemFillColor">@color/ep_btn_continuar_fondo</item>
-        <item name="itemStrokeColor">@color/ep_btn_continuar_fondo</item>
+        <item name="itemStrokeColor">#F7DEFF</item>
     </style>
 
     <!-- ____________________ styles calendar ____________________-->
@@ -240,7 +240,7 @@
 
     <!-- Styles -->
     <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@drawable/action_bar_more</item>
+        <item name="android:src">@drawable/input_background</item>
     </style>
 
     <!-- The beef: background color for Action Bar overflow menu -->
