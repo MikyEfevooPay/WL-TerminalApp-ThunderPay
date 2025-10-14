@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
@@ -17,8 +18,9 @@ import com.ThunderPay.demoui.utils.QPOSStatus;
 import com.ThunderPay.demoui.utils.TRACE;
 
 public class WMX_Transaction_Cancel extends BaseActivity {
-    private String  Amount, AmountToShow, type_transaction, ksn_posId, _Propina,_noAuth, total, months_total, subtotal, tips, msi, approve;
+    private String  Amount, AmountToShow, type_transaction, ksn_posId, _Propina,_noAuth, total, months_total, subtotal, tips, msi, approve,tarjeta;
     private Button btn_retry, btn_cancel;
+    private TextView txt_prosaerror;
     private Intent intent;
 
     @Override
@@ -33,6 +35,7 @@ public class WMX_Transaction_Cancel extends BaseActivity {
         setProps();
         btn_retry = findViewById(R.id.btn_retry);
         btn_cancel = findViewById(R.id.btn_cancel);
+        txt_prosaerror = (TextView) findViewById(R.id.txtprosaerror);
 
         btn_retry.setOnClickListener(this::onRetry);
         btn_cancel.setOnClickListener(this::onCancel);
@@ -62,6 +65,7 @@ public class WMX_Transaction_Cancel extends BaseActivity {
         String ErrorMessage = intent.getStringExtra("error");
         if(!TextUtils.isEmpty(ErrorMessage)) {
             WMX_Transaction_Cancel.super.showAlert("ERROR", ErrorMessage);
+            txt_prosaerror.setText(ErrorMessage);
         }
     }
 
@@ -79,6 +83,7 @@ public class WMX_Transaction_Cancel extends BaseActivity {
         intent.putExtra("subtotal", subtotal);
         intent.putExtra("tips", tips);
         intent.putExtra("approve", approve);
+        intent.putExtra("tarjeta", tarjeta);
         startActivity(intent);
         finish();
     }
@@ -105,6 +110,7 @@ public class WMX_Transaction_Cancel extends BaseActivity {
         subtotal = intent.getStringExtra("subtotal");
         tips =  intent.getStringExtra("tips");
         approve =  intent.getStringExtra("approve");
+        tarjeta=intent.getStringExtra("tarjeta");
     }
 
     @Override

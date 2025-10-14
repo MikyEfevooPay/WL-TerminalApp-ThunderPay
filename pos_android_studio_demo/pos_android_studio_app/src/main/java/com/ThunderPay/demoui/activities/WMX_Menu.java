@@ -231,7 +231,7 @@ public class WMX_Menu extends BaseActivity implements View.OnClickListener {
                         } else {
                             configTpv.tpvConfig(posId, 0);
                         }
-                        handler.postDelayed(this, 5000);
+                        handler.postDelayed(this, 4000);
                     } else {
                         if(configTpv.bnd[0] && !configAmex.bndamex[0]){
                             TRACE.d("configAmex entra"+configTpv.bnd[0]);

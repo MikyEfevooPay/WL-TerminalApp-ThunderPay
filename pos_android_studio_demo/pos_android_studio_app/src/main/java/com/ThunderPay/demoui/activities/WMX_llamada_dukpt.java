@@ -44,7 +44,8 @@ public class WMX_llamada_dukpt {
                             data.getString("emisor"),
                             data.getString("nip"),
                             data.getString("entrada"),
-                            data.getString("datehour"));
+                            data.getString("datehour"),
+                            data.getString("tarjeta"));
                     this.transactions.add(_data);
                 }
             }

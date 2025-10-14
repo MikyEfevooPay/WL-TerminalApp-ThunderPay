@@ -21,8 +21,8 @@ android {
         applicationId 'com.ThunderPay.demoui'
         minSdkVersion 17
         targetSdk 31
-        versionCode 297
-        versionName '1.5.9.11'
+        versionCode 300
+        versionName '1.5.9.15'
 
         ndk {
             moduleName "serial_port"

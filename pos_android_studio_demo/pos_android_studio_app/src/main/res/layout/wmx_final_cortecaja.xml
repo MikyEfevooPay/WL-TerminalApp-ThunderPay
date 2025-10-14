@@ -33,7 +33,7 @@
                 android:text="Monto total"
                 android:textAlignment="center"
                 android:textColor="#299D15"
-                android:textSize="25px" />
+                android:textSize="20px" />
 
             <TextView
                 android:id="@+id/txt_totalamount"
@@ -44,7 +44,7 @@
                 android:fontFamily="@font/dm_sans_bold"
                 android:text="$4,130.00 mxn"
                 android:textColor="#299D15"
-                android:textSize="40px" />
+                android:textSize="25px" />
 
             <TextView
                 android:id="@+id/txt_datetime"
@@ -55,7 +55,7 @@
                 android:fontFamily="@font/dm_sans"
                 android:text="27/04/22 15:24"
                 android:textColor="#121212"
-                android:textSize="35px" />
+                android:textSize="25px" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView

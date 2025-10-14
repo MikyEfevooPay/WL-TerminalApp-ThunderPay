@@ -156,6 +156,8 @@ public class WMX_Card extends BaseActivity implements View.OnClickListener {
     private String _ARQC = "N/A";
     private String _9F41 = "";
     private int trans_id;
+    public boolean ValidaTarjeta=false;
+    public String _tarjetainicio="";
     Cursor cursor;
     private DBManager dbManager;
     private Integer _Countpin = 0;
@@ -202,6 +204,7 @@ public class WMX_Card extends BaseActivity implements View.OnClickListener {
                 || type_transaction.equals("checkout") || type_transaction.equals("cierrepreventa")) {
             _noAuth = thisintent.getStringExtra("cp_tv_auth");
             msi = Integer.parseInt(thisintent.getStringExtra("months"));
+            _tarjetainicio=thisintent.getStringExtra("tarjeta");
         }
 
         Total_Amount = (TextView) findViewById(R.id.wmx_text_total_Amount);
@@ -597,6 +600,7 @@ public class WMX_Card extends BaseActivity implements View.OnClickListener {
         intent.putExtra("tips", v_tip);
         intent.putExtra("approve", _approve);
         intent.putExtra("error", error.length > 0 ? error[0] : null);
+        intent.putExtra("tarjeta", type_transaction.equals("Cancelacion") ? _tarjetainicio : "");
         startActivity(intent);
         finish();
         overridePendingTransition(R.anim.slide_to_top, R.anim.slide_to_bottom);
@@ -2049,7 +2053,6 @@ public class WMX_Card extends BaseActivity implements View.OnClickListener {
             String pan, String track2, String counter, String time_txn, String emisor) {
         if (transactionCancel || checkHistory  || startTransaction)
             return;
-        this.startTransaction = true;
 //        _encryptblumon = gntBackEnd.EncryptBlumon(gntBackEnd.MascaraTrack2(track2), Integer.parseInt(counter), cursor);
 //        TransExit = gntBackEnd.transaccion(entrada, entrymode, pan.substring(12, pan.length()),
 //                _encryptblumon.getTrack2(), _encryptblumon.getCrc32Track2(), _encryptblumon.getKsn(),
@@ -2068,21 +2071,26 @@ public class WMX_Card extends BaseActivity implements View.OnClickListener {
             CALL_SERVICIO="Prosa";
             TransExit=generatxn(entrada, entrymode, emv, gntBackEnd.redtarjetaamex(redtarjeta), gntBackEnd.tipotarjetaamex(tipotarjeta), gntBackEnd.panTrack2Prosa(pan), track2, counter, time_txn, emisor,cursor.getString(22));
         }
-        try {
-            agregaurl();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (ValidaTarjeta){
+            this.startTransaction = true;
+            try {
+                agregaurl();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            TRACE.d("TRANSEXIT: " + TransExit);
+            _redtar = gntBackEnd._redtarj;
+            _tiptar = gntBackEnd._tiptarj;
+            _card = gntBackEnd._card;
+            _emisor = gntBackEnd.emisor;
+            _entrada = gntBackEnd.entrada;
+            _pan = gntBackEnd.pan;
+            _tpvamount= gntBackEnd.tpvamount;
+            _tpvtime_txn= gntBackEnd.tpvtime_txn;
+            getFetchManager().CallById(CALL_TRANSACTION);
+        }else{
+            onCancelTransaction(getString(R.string.card_different));
         }
-        TRACE.d("TRANSEXIT: " + TransExit);
-        _redtar = gntBackEnd._redtarj;
-        _tiptar = gntBackEnd._tiptarj;
-        _card = gntBackEnd._card;
-        _emisor = gntBackEnd.emisor;
-        _entrada = gntBackEnd.entrada;
-        _pan = gntBackEnd.pan;
-        _tpvamount= gntBackEnd.tpvamount;
-        _tpvtime_txn= gntBackEnd.tpvtime_txn;
-        getFetchManager().CallById(CALL_TRANSACTION);
     }
 
     public void esperarYCerrar() {
@@ -2128,7 +2136,8 @@ public class WMX_Card extends BaseActivity implements View.OnClickListener {
     }
     public String generatxn(String entrada,String entrymode,String emv,String redtarjeta,String tipotarjeta,String pan,String track2,String counter,String time_txn,String emisor,String interfaz)
     {
-        if(interfaz.equals("Agregador"))
+        ValidaTarjeta=gntBackEnd.getValidaTarjeta(type_transaction,_tarjetainicio,pan);
+        if(interfaz.equals("Agregador")||interfaz.equals("Adquiriente"))
         {
             _encryptblumon = gntBackEnd.EncryptBlumon(gntBackEnd.MascaraTrack2(track2,interfaz), cursor);
             return gntBackEnd.transaccion(entrada, entrymode, pan.substring(12, pan.length()),_encryptblumon.getTrack2(),
@@ -2165,6 +2174,7 @@ public class WMX_Card extends BaseActivity implements View.OnClickListener {
     }
     public String GeneraAmex(String entrada,String emv,String track2,String pan,String redtarjeta,String tipotarjeta)
     {
+        ValidaTarjeta=gntBackEnd.getValidaTarjeta(type_transaction,_tarjetainicio,pan);
         String  encrypt=encrypt(gntBackEnd.MascaraTrack2(track2),cursor.getString(31),cursor.getString(30));
         String  decrypt=decrypt(encrypt,cursor.getString(31),cursor.getString(30));
         /*TRACE.d("key:"+cursor.getString(31));
