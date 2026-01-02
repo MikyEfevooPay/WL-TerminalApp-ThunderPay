@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32px"
         android:layout_marginBottom="32px"
-        android:backgroundTint="@color/ep_color_blue"
+        android:backgroundTint="@color/line_email"
         android:ems="10"
         android:fontFamily="@font/dm_sans"
 

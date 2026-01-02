@@ -32,7 +32,7 @@
                 android:fontFamily="@font/dm_sans_bold"
                 android:text="Monto total"
                 android:textAlignment="center"
-                android:textColor="#299D15"
+                android:textColor="@color/alert_money"
                 android:textSize="20px" />
 
             <TextView
@@ -43,7 +43,7 @@
                 android:layout_marginBottom="5px"
                 android:fontFamily="@font/dm_sans_bold"
                 android:text="$4,130.00 mxn"
-                android:textColor="#299D15"
+                android:textColor="@color/alert_money"
                 android:textSize="25px" />
 
             <TextView
@@ -96,7 +96,7 @@
                     android:fontFamily="@font/dm_sans_bold"
                     android:text="Corte de caja no disponible"
                     android:textAlignment="center"
-                    android:textColor="#6498FA"
+                    android:textColor="@color/btn_black"
                     android:textSize="20px" />
             </LinearLayout>
 

@@ -43,7 +43,7 @@
                     android:fontFamily="@font/dm_sans_bold"
                     android:text="Aún no se ha realizado\nninguna transacción"
                     android:textAlignment="center"
-                    android:textColor="@color/ep_set_monto"
+                    android:textColor="@color/btn_black"
                     android:textSize="23px" />
             </LinearLayout>
 

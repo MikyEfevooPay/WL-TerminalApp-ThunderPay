@@ -375,7 +375,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#000000"
+            android:backgroundTint="@color/btn_black"
             android:fontFamily="@font/dm_sans_bold"
             android:text="Mandar ticket por mail"
             android:textAllCaps="false"

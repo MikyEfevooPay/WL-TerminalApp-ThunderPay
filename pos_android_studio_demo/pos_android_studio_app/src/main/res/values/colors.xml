@@ -264,5 +264,12 @@
     <!--  Color boton secundario, mayormente es negro  -->
     <color name="btn_black">#343434</color>
 
+    <color name="radiu_color">#009ADF</color>
+
+    <color name="line_email">#6B3374</color>
+
+    <color name="dotted_line">#9950A6</color>
+
+    <color name="alert_money">#299D15</color>
 
 </resources>

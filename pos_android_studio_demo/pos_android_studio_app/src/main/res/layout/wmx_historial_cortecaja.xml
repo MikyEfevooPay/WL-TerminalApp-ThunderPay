@@ -57,7 +57,7 @@
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="324px"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/cortecaja_empty_icon" />
 
@@ -70,7 +70,7 @@
                     android:fontFamily="@font/dm_sans_bold"
                     android:text="Aún no se ha hecho\nningun corte de caja"
                     android:textAlignment="center"
-                    android:textColor="@color/ep_set_monto"
+                    android:textColor="@color/btn_black"
                     android:textSize="22px" />
             </LinearLayout>
 
